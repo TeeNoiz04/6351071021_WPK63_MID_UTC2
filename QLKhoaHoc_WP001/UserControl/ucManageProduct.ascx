@@ -4,7 +4,7 @@
     <tr>
         <td>Product name:</td>
         <td><asp:TextBox ID="TextBoxName" runat="server" ValidateRequestMode="Enabled" OnTextChanged="TextBoxName_TextChanged"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBoxName" ErrorMessage="Teen phai nhap"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBoxName" ErrorMessage="Teen phai nhap" ForeColor="#CC3300"></asp:RequiredFieldValidator>
         </td>
         <td>&nbsp;</td>
     </tr>
@@ -12,7 +12,7 @@
         <td>Duration</td>
         <td>
             <asp:TextBox ID="TextBoxDuration" runat="server"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBoxDuration" ErrorMessage="Phai nhap duration"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBoxDuration" ErrorMessage="Phai nhap duration" ForeColor="#CC3300"></asp:RequiredFieldValidator>
         </td>
         <td>&nbsp;</td>
     </tr>
@@ -25,7 +25,7 @@
     <td>Description</td>
     <td>
         <asp:TextBox ID="TextBoxDescription" TextMode="MultiLine" runat="server"></asp:TextBox>
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBoxDescription" ErrorMessage="Phai nhap mo ta"></asp:RequiredFieldValidator>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBoxDescription" ErrorMessage="Phai nhap mo ta" ForeColor="#CC3300"></asp:RequiredFieldValidator>
         </td>
        
     <td>&nbsp;</td>
@@ -34,7 +34,7 @@
      <td>Picture</td>
      <td>
          <asp:FileUpload ID="FileUploadPicture" runat="server" />
-         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="FileUploadPicture" ErrorMessage="Chua upload file"></asp:RequiredFieldValidator>
+         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="FileUploadPicture" ErrorMessage="Chua upload file" ForeColor="#CC3300"></asp:RequiredFieldValidator>
         </td>
      <td>&nbsp;</td>
  </tr>
@@ -61,7 +61,7 @@
     </asp:TemplateField>
     <asp:TemplateField HeaderText="Name">
         <ItemTemplate>
-            <asp:HyperLink ID="HyperLink1" Text='<%# Eval("Name")%>' Target="_blank" runat="server" NavigateUrl='<%# "~/Details.aspx?id="+Eval("id") %>'></asp:HyperLink>
+            <asp:HyperLink ID="HyperLink1" Text='<%# Eval("Name")%>' Target="_blank" runat="server" NavigateUrl='<%# "~/Detail.aspx?id="+Eval("id") %>'></asp:HyperLink>
         </ItemTemplate>
     </asp:TemplateField>
     <asp:TemplateField>
